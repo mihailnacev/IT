@@ -1,0 +1,212 @@
+﻿body {
+    /*background-color:#BA252A;*/
+    background-image: url("../Images/Background.jpg");
+    height: 100%;
+    width: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.no-js #loader {
+    display: none;
+}
+
+.js #loader {
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+}
+
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url("../Images/Preloader_10.gif") center no-repeat #fff;
+}
+
+#logoImage {
+    height: auto;
+    max-width: 200px;
+}
+
+#logo {
+    height: 137px;
+    float: left;
+}
+
+.logoPosition1 {
+    width: 100%;
+    text-align: center;
+}
+
+.logoPosition2 {
+    width: 30%;
+    text-align: center;
+}
+
+#container {
+    width: 90%;
+    height: 145px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: auto;
+    background-color: white;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+}
+
+#header {
+    width: 100%;
+}
+
+
+#footerContainer {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    height: 100px;
+}
+
+.headerHeight1 {
+    height: 225px;
+}
+
+.headerHeight2 {
+    height: 285px;
+}
+
+.headerHeight3 {
+    height: 455px;
+}
+
+#menu {
+    float: right;
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.menuPosition {
+    width: 100%;
+    margin: auto;
+}
+
+.menuPadding {
+    padding-right: 30px;
+}
+
+.menuItem1 {
+    text-decoration: none;
+    color: #BA252A;
+    background-color: white;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Malgun Gothic';
+}
+
+.menuItem2 {
+    text-decoration: none;
+    color: #BA252A;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Malgun Gothic';
+    display: block;
+    text-align: center;
+    position: relative;
+}
+
+.menuItem3 {
+    text-decoration: none;
+    color: #BA252A;
+    background-color: white;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 5px;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Malgun Gothic';
+    text-align: center;
+    position: relative;
+}
+
+#status {
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+    padding-right: 10%;
+}
+
+#loggedUser, #noLoggedUser {
+    text-align: right;
+    display: block;
+    color: yellow;
+    padding: 5px;
+}
+
+#logIn, #logOut, #register {
+    text-decoration: none;
+    color: yellow;
+}
+
+#user {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#SiteMap {
+    width: 90%;
+    margin: auto;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.CurrentNode {
+    color: #BA252A;
+    background-color: #F0CB01;
+    border-radius: 10px;
+    padding: 5px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.Node {
+    color: #F0CB01;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.PathSeparator {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #F0CB01;
+    font-weight: bold;
+}
+
+#copyright {
+    margin: auto;
+    text-align: center;
+    font-size: 12px;
+    color: darkred;
+    position: relative;
+    font-weight: bold;
+    top: 40%;
+}
