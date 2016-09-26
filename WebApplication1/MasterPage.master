@@ -216,7 +216,7 @@
                     <asp:Panel ID="noLoggedUser" runat="server">
                         <asp:LinkButton ID="logIn" runat="server" OnClick="logIn_Click" CausesValidation="False"><i class="fa fa-sign-in" aria-hidden="true"></i> Најави се</asp:LinkButton>
                         <asp:Label ID="Label3" runat="server" Text="|"></asp:Label>
-                        <asp:LinkButton ID="register" runat="server" OnClick="register_Click" CausesValidation="False"><i class="fa fa-plus-circle" aria-hidden="true"></i> Регистрирај се</asp:LinkButton>
+                        <asp:LinkButton ID="register" runat="server" OnClick="register_Click" CausesValidation="False"><i class="fa fa-plus-square" aria-hidden="true"></i> Регистрирај се</asp:LinkButton>
                     </asp:Panel>
                 </asp:Panel>
                 <asp:Panel ID="container" runat="server">
