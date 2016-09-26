@@ -26,6 +26,7 @@
             font-weight: bolder;
             /*padding-left: 40%;*/
             color: #BA252A;
+            text-align: center;
         }
 
         #Pan2 {
