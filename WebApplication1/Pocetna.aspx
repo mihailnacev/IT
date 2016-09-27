@@ -53,6 +53,7 @@
             margin: auto;
             margin-top: 3%;
             width: 65%;
+            text-align:right;
         }
 
         #RepButton {
@@ -65,7 +66,7 @@
         }
 
         #Button1 {
-        margin-left:43%;
+        //margin-left:43%;
         color: rgb(245,222,95);
         border:none;
         border-bottom:2px solid rgb(245,222,95);
