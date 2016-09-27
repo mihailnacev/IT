@@ -29,6 +29,18 @@ public partial class Repertoar : System.Web.UI.Page
             gvPretstavi.DataBind();
         }
 
+
+       if (Session["button1Clicked"]!=null) {
+
+            mvSearch.ActiveViewIndex = 1;
+            gvPretstavi.Visible = false;
+            Panel1.Visible = false;
+            calendarSearch.Visible = false;
+            imCalendar.Visible = false;
+            Session["button1Clicked"] = null;
+
+        }
+
     }
 
     public void IspolniMaster()
@@ -135,16 +147,16 @@ public partial class Repertoar : System.Web.UI.Page
         string datum = (string)Session["Datum"];
         //if (najaven != null)
         //{
-        funkcija(najaven, selektirano, datum);
-        string message = "Успешна резервација!";
-        System.Text.StringBuilder sb = new System.Text.StringBuilder();
-        sb.Append("<script type = 'text/javascript'>");
-        sb.Append("window.onload=function(){");
-        sb.Append("alert('");
-        sb.Append(message);
-        sb.Append("')};");
-        sb.Append("</script>");
-        ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
+            funkcija(najaven, selektirano, datum);
+            string message = "Успешна резервација!";
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            sb.Append("<script type = 'text/javascript'>");
+            sb.Append("window.onload=function(){");
+            sb.Append("alert('");
+            sb.Append(message);
+            sb.Append("')};");
+            sb.Append("</script>");
+            ClientScript.RegisterClientScriptBlock(this.GetType(), "alert", sb.ToString());
         /*}
         else
         {
@@ -210,7 +222,7 @@ public partial class Repertoar : System.Web.UI.Page
         Session["imenaP"] = pretstava;
         //Session["imenaP"] = gvPretstavi.DataKeys[gvPretstavi.SelectedIndex].Value.ToString();
         Response.Redirect("~/PretstavaDetails.aspx");
-
+        
     }
 
     protected void gvPretstavi_RowCreated(object sender, GridViewRowEventArgs e)
@@ -234,6 +246,8 @@ public partial class Repertoar : System.Web.UI.Page
         main.Visible = true;
         Panel1.Visible = true;
         pnlSearch.Visible = true;
+        //
+        gvPretstavi.Visible = true;
         mvSearch.ActiveViewIndex = 0;
         ViewState["set"] = null;
         ViewState["set1"] = null;
@@ -491,11 +505,13 @@ public partial class Repertoar : System.Web.UI.Page
     protected void calendarSearch_SelectionChanged(object sender, EventArgs e)
     {
         string help = calendarSearch.SelectedDate.ToShortDateString();
+
         string[] tokens = help.Split('.');
         string day = "";
         string month = "";
         string year = "";
         if (tokens.Length > 1)
+
         {
             month = tokens[1];
             if (month.Length == 1)
@@ -510,8 +526,7 @@ public partial class Repertoar : System.Web.UI.Page
             year = tokens[2];
 
         }
-        else
-        {
+        else {
             tokens = help.Split('/');
             month = tokens[0];
             if (month.Length == 1)
@@ -524,7 +539,7 @@ public partial class Repertoar : System.Web.UI.Page
                 day = "0" + day;
             }
             year = tokens[2];
-
+        
         }
         string argument = day + "." + month + "." + year;
         tbKluc.Text = argument;

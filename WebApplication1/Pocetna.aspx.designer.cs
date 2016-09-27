@@ -57,6 +57,24 @@ public partial class Pocetna {
     protected global::System.Web.UI.WebControls.Panel Rep;
     
     /// <summary>
+    /// Button1 control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Button Button1;
+    
+    /// <summary>
+    /// lblOddeli control.
+    /// </summary>
+    /// <remarks>
+    /// Auto-generated field.
+    /// To modify move field declaration from designer file to code-behind file.
+    /// </remarks>
+    protected global::System.Web.UI.WebControls.Label lblOddeli;
+    
+    /// <summary>
     /// RepButton control.
     /// </summary>
     /// <remarks>
