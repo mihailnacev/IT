@@ -1,2 +1,2 @@
 # Интернет технологии
-Веб страна- makteatri.azurewebsites.net
+http://makteatri.azurewebsites.net
