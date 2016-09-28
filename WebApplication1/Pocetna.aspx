@@ -8,6 +8,21 @@
     <script src="Scripts/ScriptPocetna.js" type="text/javascript"></script>
     <script src="Scripts/jquery.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#SiteMap").hide();
+
+            $("#skrienoKopche").hide();
+
+            $("#skrienTextBox").hide();
+
+            $(".carouselButton").click(function () {
+                $("#skrienTextBox").val($(this).attr("title"));
+                event.preventDefault();
+                $("#skrienoKopche").trigger("click");
+            })
+        })
+    </script>
     <style type="text/css">
         #BOX {
             background-color: white;
