@@ -260,7 +260,7 @@
         </tr>
         <tr id="OhridToggle">
             <td class="auto-style3" id="slika">
-            <asp:Image ID="Image11" runat="server" ImageUrl="~/Images/Ohrid.JPG"/>
+            <asp:Image ID="Image11" runat="server" ImageUrl="~/Images/Ohrid.jpg"/>
                 &nbsp;</td>
             <td class="auto-style3">
                 <asp:Label ID="label10" runat="server" 
