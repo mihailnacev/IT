@@ -106,7 +106,7 @@
         </tr>
         <tr id="MNTToggle">
             <td class="auto-style3" id="slika">
-                <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/mntSkopje.png" />
+                <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/MNTT.jpg" />
             </td>
 
             <td class="auto-style3">
@@ -260,7 +260,7 @@
         </tr>
         <tr id="OhridToggle">
             <td class="auto-style3" id="slika">
-            <asp:Image ID="Image11" runat="server" ImageUrl="~/Images/A1.jpg"/>
+            <asp:Image ID="Image11" runat="server" ImageUrl="~/Images/Ohrid.JPG"/>
                 &nbsp;</td>
             <td class="auto-style3">
                 <asp:Label ID="label10" runat="server" 
