@@ -11,6 +11,11 @@
     margin-left: 5%;
 }
 
+#dvPretstavi td {
+    padding: 1%;
+    border: none;
+}
+
 #uspeshnaRez {
     color: darkred;
     font-style: italic;
