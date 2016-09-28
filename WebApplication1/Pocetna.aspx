@@ -27,7 +27,7 @@
         .carouselButton {
             border: none;
             background: transparent;
-            font-size: 20px;
+            font-size: 30px;
             color: #F0CB01;
         }
 
