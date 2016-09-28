@@ -79,7 +79,7 @@ public partial class MyProfile : System.Web.UI.Page
             {
                 //ListItem li = new ListItem(citac[0].ToString() + " " + citac[2].ToString(), citac[0].ToString());
                 //lbRezervacii.Items.Add(li);
-                pretstavi1.Add(citac[0].ToString() + " - " + citac[2].ToString());
+                pretstavi1.Add(citac[0].ToString() + "-" + citac[2].ToString());
                 pretstavi2.Add(citac[0].ToString());
             }
             lbRezervacii.DataSource = pretstavi1;
