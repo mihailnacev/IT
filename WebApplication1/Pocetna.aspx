@@ -24,6 +24,13 @@
         })
     </script>
     <style type="text/css">
+        .carouselButton {
+            border: none;
+            background: transparent;
+            font-size: 20px;
+            color: #F0CB01;
+        }
+
         #BOX {
             background-color: white;
             padding: 30px;
